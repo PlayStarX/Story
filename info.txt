@@ -1,0 +1,29 @@
+You use the commands to see which files in your repository have not been added by git into the staging area.The 
+staging area exists solely for the purpose of including only the files you would like git to track.
+git status
+Then you add a single file or all files by using one or the other command
+git add (file name.ext) or git add .
+Commit all these files by using the git commit -m "" command
+If you make a mistake & save your file you can use the command git checkout (file name.ext) to roll back to an
+earlier save
+To compare the old version of your files to the new save use git diff (file name.ext)
+
+After commiting you still need to add your project to github. You can do so by using this command
+git remote add origin (Your remote github email address for your repository)
+git push -u origin master pushes your local repository to the remote repository
+
+Your master branch is your main branch of save points/ commits.
+Our local repository which we have is our files inside our .git folder. Our remote repository is github.
+
+ls -a shows all files, hidden & public.
+touch .gitignore creates a hidden file for not adding/ committing any unnecessary files to git.
+name the files you do not want committed inside this hidden file. When naming files you can also comment using
+the # sign first before your comment.
+you can target specific file groups by adding the *.(ext) of the group of files you wish to target.
+git rm --cached -r . - removes all your git adds
+
+git clone (clone address from github repository) clones a repository from a remote source to your local source
+
+Of your 2 branch types you can use the command - git branch (Name) - to create a branch under your main branch
+To see your branches just use the - git branch - command. git checkout (branch name) switches your commits into 
+that specific branch.
